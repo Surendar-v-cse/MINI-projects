@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-900: #001226;
+  --color-navy-800: #001f3f;
+  --color-navy-700: #002d5c;
+  --color-gold-500: #d4af37;
+  --color-gold-400: #f1c40f;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-navy-900 text-white font-mono selection:bg-gold-500/30;
+  }
+}
+
+.tactical-border {
+  @apply border border-gold-500/30 shadow-[0_0_15px_rgba(212,175,55,0.1)];
+}
+
+.tactical-glass {
+  @apply bg-navy-800/50 backdrop-blur-md border border-white/10;
+}
+
+.glow-gold {
+  @apply shadow-[0_0_10px_rgba(212,175,55,0.5)];
+}
+
+@keyframes pulse-gold {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
