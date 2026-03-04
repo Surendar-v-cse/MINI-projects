@@ -1,5 +1,5 @@
 {
-  "name": "Tactical Morse Comm",
+  "name": "Tactical MoCo",
   "description": "A Navy Special Forces themed Morse code encoder and decoder with tactical UI and audio signaling.",
   "requestFramePermissions": ["microphone"]
 }
